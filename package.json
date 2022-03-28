@@ -11,8 +11,11 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "playwright": "^1.20.1",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "playwright-core": "^1.20.1"
+  }
 }
