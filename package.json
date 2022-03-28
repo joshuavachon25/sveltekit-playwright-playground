@@ -6,13 +6,12 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
-    "test": "playwright test"
+    "prepare": "svelte-kit sync"
   },
   "devDependencies": {
-    "@playwright/test": "^1.20.0",
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "playwright": "^1.20.1",
     "svelte": "^3.44.0"
   },
   "type": "module"
