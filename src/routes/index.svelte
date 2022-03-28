@@ -2,7 +2,7 @@
     let sec = 0
     let img = ""
     async function getScreenshot(){
-        const rep = await fetch(`/api/screenshot?url=https://www.humati.ca&pause=${sec * 1000}`)
+        const rep = await fetch(`/api/screen?url=https://www.humati.ca&pause=${sec * 1000}`)
         let chat = await rep.json()
         console.log(chat)
         img = chat.image
