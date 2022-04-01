@@ -1,5 +1,4 @@
-import chromium from 'chrome-aws-lambda';
-import playwright from 'playwright-core';
+import playwright from 'playwright';
 
 export async function get({url}){
     let code = 200, fileData, erreur
@@ -9,9 +8,9 @@ export async function get({url}){
 
     try {
         const browser = await playwright.chromium.launch({
-            args: chromium.args,
-            executablePath: await chromium.executablePath,
-            headless: chromium.headless,
+            args: playwright.chromium.args,
+            executablePath: await playwright.chromium.executablePath,
+            headless: playwright.chromium.headless,
         })
         const page = await browser.newPage({
             viewport: {
