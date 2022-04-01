@@ -15,6 +15,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.0",
     "playwright": "^1.20.1"
   }
 }
